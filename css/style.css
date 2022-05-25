@@ -100,7 +100,6 @@ html {
 /*-----------------------------------------------HEADER END*/
 
 .wrapper .title {
-    max-width: 180px;
     font-size: 50px;
     color: #070707; 
     letter-spacing: 1.2px;    
@@ -111,14 +110,13 @@ html {
     font-size: 18px;
     line-height: 30px; 
     font-weight: 300; 
-    margin-left: 240px;
 }
 
  .wrapper_title {
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-end;
     margin-bottom: 50px;
+    justify-content: space-around;
 }
 
 .wrapper_photo {
@@ -155,7 +153,6 @@ html {
 .about_me {
     max-width: 600px;
     text-align: center;
-    padding: 40px;
 }
 
 .wrapper .skills_title {
@@ -177,6 +174,10 @@ html {
 
 .skills_program img {
     margin-bottom: 25px;
+}
+
+.skills_program figure {
+    margin: 0 auto;
 }
 
 figcaption {
@@ -247,12 +248,9 @@ figcaption {
 
 .social_link {
     display: flex;
-    text-align: center;
-    width: 200px;
+    max-width: 200px;
     justify-content: space-between;
-    margin-left: 400px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin: 50px auto;
 }
 
 
@@ -266,9 +264,9 @@ figcaption {
 
 
 .panel-group {
-    max-width: 215px;
-    margin-left: 390px;
     text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
 }
 
 .panel-group a:hover {
@@ -405,130 +403,56 @@ collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
 
 
 @media screen and (max-width: 992px) {
-    .header_item {
-        margin-right: 100px;
-    }
-
-    .panel-group {
-        margin-left: 280px;  
-    }
-
-    .social_link {
-        margin-left: 286px
-    }
+    
 }
-
-@media screen and (max-width: 740px) {
-    .header_item {
-        margin-right: 95px;
-    }
-
-    .panel-group {
-        margin-left: 267px;
-    }
-
-    .social_link {
-        margin-left: 277px;
-    }
-
+@media screen and (max-width: 768px) {
     .progress {
+        margin: 0 auto;
+        max-width: 710px;
         border-radius: 25px !important;
     }
-
-    .wrapper_title {
-        margin-left: 30px;
-    }
-
 }
 
 @media screen and (max-width: 640px) {
-    .header_item {
-        margin-right: 60px;
-    }
-    
-    .panel-group {
-        margin-left: 209px;
-    }
 
-    .social_link {
-        margin-left: 217px;
-    }
-    
 }
 
 @media screen and (max-width: 525px) {
-    .header_item {
-        margin-right: 40px;
+    .wrapper .title_work {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 300;
     }
 
     .wrapper_title {
         display: flex;
-        justify-content: space-evenly;
-    }
-
-    .wrapper .title_work {
-        margin-left: 87px;
-    }
-
-    .panel-group {
-        margin-left: 157px;
-    }
-
-    .social_link {
-        margin-left: 160px;
-    }
+        align-items: center;
+        margin-bottom: 50px;
+        justify-content: flex-start;
+        flex-direction: column;
+    } 
 }
 
-@media screen and (max-width: 440px) {
-    .header_item {
-        margin-right: 23px;
-    }
-    .wrapper .title_work {
-        margin-left: 26px;
-    }
-
-    .about_me {
-        padding: 15px;
-    }
-
-    .panel-group {
-        margin-left: 119px;
-    }
-
-    .social_link {
-        margin-left: 127px;
-    }
-
-}
-
-@media screen and (max-width: 375px) {
-    .header_item {
-        margin-right: 7px;
-    }
-
-    .container-fluid {
-        height: 505px;
-    }
-
+@media screen and (max-width: 480px) {
     .skills_program {
         display: grid;
         grid-template-columns: 20%20%20%;
         grid-template-rows: 50%;
     }
+}
 
-    .panel-group {
-        margin-left: 90px;
+@media screen and (max-width: 400px) {
+    .education_title p {
+        margin-bottom: 10px;
     }
 
-    .social_link {
-        margin-left: 96px;
-    }
-
-    .wrapper_photo {
-        height: 510px;
+    .about_me p {
+        margin-bottom: 10px;
     }
 }
 
+
+ 
 
 
 

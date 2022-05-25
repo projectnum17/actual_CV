@@ -253,6 +253,11 @@ figcaption {
     margin: 50px auto;
 }
 
+.social_link img {
+    width: 32px;
+    height: 32px;
+}
+
 
 .social_link a {
     transition: transform .2s linear;

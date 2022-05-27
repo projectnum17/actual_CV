@@ -97,8 +97,31 @@ html {
 .nav_wrapper .menu>li>a:hover {
     color: #000;
 }
+.logotype {
+    width: 128px;
+    height: 128px;
+}
 /*-----------------------------------------------HEADER END*/
 
+/*-----------------------------------------------ICON STYLE START*/
+.logotype {
+    width: 128px;
+    height: 128px;
+}   
+
+#bootstrap {
+    fill: #5e3b7f;
+}
+
+.skills_program svg {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 25px;
+
+}
+
+
+/*-----------------------------------------------ICON STYLE END*/
 .wrapper .title {
     font-size: 50px;
     color: #070707; 
@@ -170,10 +193,6 @@ html {
 .skills_program {
     display: flex;
     justify-content: space-around;
-}
-
-.skills_program img {
-    margin-bottom: 25px;
 }
 
 .skills_program figure {
@@ -253,11 +272,12 @@ figcaption {
     margin: 50px auto;
 }
 
+
+
 .social_link img {
     width: 32px;
     height: 32px;
 }
-
 
 .social_link a {
     transition: transform .2s linear;

@@ -28,7 +28,9 @@
                         </div>
                     </div>
                     <a href="index.html" class="logo" id="logo">
-                        <img src="./images/logo.png" alt="">
+                        <svg class="logotype">
+                            <use xlink:href="images/sprite.svg#logotype"></use>
+                        </svg>
                     </a>
                     <ul class="menu" id="menu">
                         <li><a href="index.html">Home</a></li>
@@ -71,12 +73,47 @@
                 <h1 class="skills_title" id="skills_title">Skills</h1>
                 <p class="skills_desc">I work in such programs as</p>
                 <div class="skills_program">
-                    <figure><img src="./images/html-5.png" alt="html-5.png"><figcaption>HTML</figcaption></figure>
-                    <figure><img src="./images/css-3.png" alt="css-3.png"><figcaption>CSS</figcaption></figure>
-                    <figure><img src="./images/js.png" alt="js.png"><figcaption>JavaSctipt</figcaption></figure>
-                    <figure><img src="./images/bootstrap.png" alt="bootstrap.png"><figcaption>Bootstrap</figcaption></figure>
-                    <figure><img src="./images/figma.png" alt="figma.png"><figcaption>Figma</figcaption></figure>
-                    <figure><img src="./images/github-logo-silhouette-in-a-square.png" alt="github-logo-silhouette-in-a-square.png"><figcaption>GitHub</figcaption></figure>
+                    <figure>
+                        <svg class="skill_ico">
+                            <use xlink:href="images/sprite.svg#html"></use>
+                        </svg>
+                        <figcaption>HTML</figcaption>
+                    </figure>
+
+                    <figure>
+                        <svg class="skill_ico">
+                            <use xlink:href="images/sprite.svg#css"></use>
+                        </svg>
+                        <figcaption>CSS</figcaption>
+                    </figure>
+
+                    <figure>
+                        <svg class="skill_ico">
+                            <use xlink:href="images/sprite.svg#js"></use>
+                        </svg>
+                        <figcaption>JavaSctipt</figcaption>
+                    </figure>
+
+                    <figure>
+                        <svg class="skill_ico" id="bootstrap">
+                            <use xlink:href="images/sprite.svg#bootstrap"></use>
+                        </svg>
+                        <figcaption>Bootstrap</figcaption>
+                    </figure>
+
+                    <figure>
+                        <svg class="skill_ico" id="figma">
+                            <use xlink:href="images/sprite.svg#figma"></use>
+                        </svg>
+                        <figcaption>Figma</figcaption>
+                    </figure>
+
+                    <figure>
+                        <svg class="skill_ico">
+                            <use xlink:href="images/sprite.svg#github"></use>
+                        </svg>
+                        <figcaption>GitHub</figcaption>
+                    </figure>
                 </div>
                 <div class="progress">
                     <div class="progress-bar progress-bar_1" style="width: 16.66%">
@@ -139,9 +176,17 @@
                 </div>
 
                 <div class="social_link">
-                    <a href="https://instagram.com/old.kentucky?igshid=YmMyMTA2M2Y=" target="_blank"><img src="./images/insta_ico.png" alt="https://instagram.com/old.kentucky?igshid=YmMyMTA2M2Y="></a> 
-                    <a href="https://t.me/+380981041202" target="_blank"><img src="./images/telegram_ico.png" alt="https://t.me/+380981041202"></a> 
-                    <a href="https://wa.me/+380981041202" target="_blank"><img src="./images/whatsapp_ico.png" alt="https://wa.me/+380981041202"></a>
+                    <a href="https://instagram.com/old.kentucky?igshid=YmMyMTA2M2Y=" target="_blank">
+                        <img src="./images/insta_ico.png" alt="https://instagram.com/old.kentucky?igshid=YmMyMTA2M2Y="> 
+                    </a> 
+
+                    <a href="https://t.me/+380981041202" target="_blank">
+                        <img src="./images/telegram_ico.png" alt="https://t.me/+380981041202">
+                    </a> 
+
+                    <a href="https://wa.me/+380981041202" target="_blank">
+                        <img src="./images/whatsapp_ico.png" alt="https://wa.me/+380981041202">
+                    </a>
                 </div>
             </div>
         </div>

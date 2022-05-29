@@ -28,3 +28,14 @@ function closeOnClick() {
   hamb.classList.remove("active");
   body.classList.remove("noscroll");
 }
+
+(function () {
+  const header = document.querySelector('.navbar_new');
+  window.onscroll = () => {
+    if(window.pageYOffset > 100) {
+      header.classList.add('navbar_new_active');
+    } else {
+      header.classList.remove('navbar_new_active');
+    }
+  }
+}())

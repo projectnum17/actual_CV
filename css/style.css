@@ -47,15 +47,26 @@ html {
     text-align: center;
 }
 /*-----------------------------------------------HEADER START*/
+.navbar_new {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all .2s linear;
+}
+
+.navbar_new_active {
+    background-color: white;
+}
 
 .nav_wrapper {
     display: flex;
     justify-content: space-between;
     height: 100%;
-    padding: 33px 0 33px 0;
+    padding: 20px 0 15px 0;
     border-bottom: 1px solid #b7b7b7;
 }
-
 
 .hamb {
     display: none;
@@ -97,16 +108,13 @@ html {
 .nav_wrapper .menu>li>a:hover {
     color: #000;
 }
-.logotype {
-    width: 128px;
-    height: 128px;
-}
+
 /*-----------------------------------------------HEADER END*/
 
-/*-----------------------------------------------ICON STYLE START*/
+/*-----------------------------------------------SVG STYLE START*/
 .logotype {
-    width: 128px;
-    height: 128px;
+    width: 100px;
+    height: 100px;
 }   
 
 #bootstrap {
@@ -119,9 +127,10 @@ html {
     margin-bottom: 25px;
 
 }
+/*-----------------------------------------------SVG STYLE END*/
 
 
-/*-----------------------------------------------ICON STYLE END*/
+/*-----------------------------------------------MAIN CONTENT START*/
 .wrapper .title {
     font-size: 50px;
     color: #070707; 
@@ -140,6 +149,7 @@ html {
     align-items: flex-end;
     margin-bottom: 50px;
     justify-content: space-around;
+    margin-top: 200px;
 }
 
 .wrapper_photo {
@@ -148,7 +158,6 @@ html {
     background-size: cover;
     margin-bottom: 100px;
 }
-
 
 .container-fluid {
     height: 450px;
@@ -176,6 +185,7 @@ html {
 .about_me {
     max-width: 600px;
     text-align: center;
+    padding: 0 15px;
 }
 
 .wrapper .skills_title {
@@ -233,6 +243,7 @@ figcaption {
 .education_title {
     text-align: center;
     max-width: 700px;
+    padding: 0 15px;
 }
 
 .education_title h1 {
@@ -334,8 +345,9 @@ collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
 .panel-body span {
     color: #000;
 }
+/*-----------------------------------------------MAIN CONTENT END*/
 
-
+/*-----------------------------------------------RESPONSIVE START*/
 @media screen and (max-width: 1200px) {
     .header_item {
         margin-right: 150px;
@@ -387,6 +399,7 @@ collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
         align-items: center;
         justify-content: start;
         padding: 50px 0;
+        margin-top: 150px;
     }
 
     .popup .menu>li {
@@ -475,14 +488,4 @@ collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
         margin-bottom: 10px;
     }
 }
-
-
- 
-
-
-
-
-
-
-
-
+/*-----------------------------------------------RESPONSIVE END*/

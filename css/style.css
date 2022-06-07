@@ -33,10 +33,6 @@
     color: black !important;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 
 .wrapper {
     max-width: 1000px;
@@ -63,6 +59,7 @@ html {
 .nav_wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 100%;
     padding: 20px 0 15px 0;
     border-bottom: 1px solid #b7b7b7;
@@ -97,7 +94,7 @@ html {
 .nav_wrapper .menu>li>a {
     display: flex;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 30px;
     font-size: 18px;
     line-height: 22px;
     color: #828282;
@@ -109,7 +106,76 @@ html {
     color: #000;
 }
 
+.theme {
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.change-theme {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
 /*-----------------------------------------------HEADER END*/
+
+/*-----------------------------------------------CHECKBOX STYLE START*/
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+.check {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: #092c3e;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in .5s;
+}
+
+input[type="checkbox"]:checked ~ .check {
+    background-color: #F6F6F6;
+}
+
+.check:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+input[type="checkbox"]:checked ~ .check:before {
+    transform: translateX(-50px);
+}
+
+.check:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background-color: #092c3e;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: .5s;
+    transform: translateX(50px);
+}
+
+input[type="checkbox"]:checked ~ .check:after {
+    transform: translateX(0px);
+}
+/*-----------------------------------------------CHECKBOX STYLE END*/
 
 /*-----------------------------------------------SVG STYLE START*/
 .logotype {
@@ -125,10 +191,8 @@ html {
     width: 64px;
     height: 64px;
     margin-bottom: 25px;
-
 }
 /*-----------------------------------------------SVG STYLE END*/
-
 
 /*-----------------------------------------------MAIN CONTENT START*/
 .wrapper .title {
@@ -283,8 +347,6 @@ figcaption {
     margin: 50px auto;
 }
 
-
-
 .social_link img {
     width: 32px;
     height: 32px;
@@ -311,7 +373,7 @@ figcaption {
 
 .panel-default>.panel-heading {
     color: #fff !important;
-    background-color: #000000 !important;
+    background-color: #151515 !important;
     border-color: #000 !important;
 }
 
@@ -436,23 +498,14 @@ collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
     body.noscroll {
         overflow: hidden;
     }
-
 }
 
-
-@media screen and (max-width: 992px) {
-    
-}
 @media screen and (max-width: 768px) {
     .progress {
         margin: 0 auto;
         max-width: 710px;
         border-radius: 25px !important;
     }
-}
-
-@media screen and (max-width: 640px) {
-
 }
 
 @media screen and (max-width: 525px) {

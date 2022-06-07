@@ -60,7 +60,7 @@
     transition: .2s linear;
 }
 
-.theme svg:hover {
+.theme svg:hover, .theme svg:focus {
     fill: whitesmoke;
 }
 
@@ -68,7 +68,7 @@
     transition: .2s linear;
 }
 
-.theme:hover {
+.theme:hover, .theme:focus {
     background-color: #092c3e;
 }
 

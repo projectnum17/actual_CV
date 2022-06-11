@@ -5,6 +5,9 @@ const body = document.body;
 
 hamb.addEventListener('click', hambHandler);
 
+
+/*PopUp menu*/
+
 function hambHandler(e) {
     e.preventDefault();
     popup.classList.toggle("open");
@@ -29,11 +32,12 @@ function closeOnClick() {
   body.classList.remove("noscroll");
 };
 
+/*Header background*/
 
 (function () {
   const header = document.querySelector('.navbar_new');
   window.onscroll = () => {
-    if(window.pageYOffset > 100) {
+    if(window.pageYOffset > 50) {
       header.classList.add('navbar_new_active');
     } else {
       header.classList.remove('navbar_new_active');
@@ -42,6 +46,7 @@ function closeOnClick() {
 }());
 
 
+/*Smooth scroll*/
 
 (function () {
 
@@ -80,8 +85,9 @@ function closeOnClick() {
       });
   };
   scrollTo();
-}()); 
+}());
 
+/*Ligth and dark theme*/
 
 const themeSwitchers = document.querySelectorAll('.change-theme');
 

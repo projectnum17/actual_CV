@@ -633,9 +633,14 @@ collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
 
 @media screen and (max-width: 525px) {
     .wrapper .title_work {
+        max-width: 100%;
         font-size: 18px;
         line-height: 30px;
         font-weight: 300;
+    }
+
+    .lang_title {
+        transform: rotate(0);
     }
 
     .wrapper_title {

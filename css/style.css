@@ -49,6 +49,7 @@
     line-height: 1.2 !important;
     color: black !important;
 }
+
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
@@ -416,7 +417,30 @@ figcaption {
 }
 
 .portfolio__card-lg {
-    grid-column: span 3;
+    grid-column: span 4;
+}
+
+.portfolio__card-lg img {
+    height: 300px;
+    width: 100%;
+}
+
+.portfolio__card-sm {
+    grid-column: span 2;
+}
+
+.portfolio__card-sm img {
+    height: 300px;
+    width: 100%;
+}
+
+.portfolio__card-big {
+    grid-column: span 6;
+}
+
+.portfolio__card-big img {
+    height: 300px;
+    width: 100%;
 }
 /*----------------------------------------------------------PORTFOLIO STYLE END*/
 
@@ -627,6 +651,14 @@ collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
     }
 
     .portfolio__card-lg {
+        grid-column: span 6;
+    }
+    
+    .portfolio__card-sm {
+        grid-column: span 6;
+    }
+    
+    .portfolio__card-big {
         grid-column: span 6;
     }
 }

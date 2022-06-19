@@ -1,3 +1,7 @@
+/*Animate*/
+AOS.init();
+
+
 const hamb = document.querySelector('.hamb');
 const popup = document.querySelector ('.popup');
 const menu = document.querySelector('.menu').cloneNode(1);
@@ -41,7 +45,7 @@ function closeOnClick() {
       header.classList.add('navbar_new_active');
     } else {
       header.classList.remove('navbar_new_active');
-    };
+    }
   };
 }());
 
@@ -51,7 +55,7 @@ function closeOnClick() {
 (function () {
 
   const smoothScroll = function (targetEl, duration) {
-      const headerElHeight =  document.querySelector('.header').clientHeight;
+      const headerElHeight =  document.querySelector('.navbar_new').clientHeight;
       let target = document.querySelector(targetEl);
       let targetPosition = target.getBoundingClientRect().top - headerElHeight;
       let startPosition = window.pageYOffset;
@@ -76,7 +80,7 @@ function closeOnClick() {
   };
 
   const scrollTo = function () {
-      const links = document.querySelectorAll('.js_scroll');
+      const links = document.querySelectorAll('.js-scroll');
       links.forEach(each => {
           each.addEventListener('click', function () {
               const currentTarget = this.getAttribute('href');
@@ -85,7 +89,7 @@ function closeOnClick() {
       });
   };
   scrollTo();
-}());
+}()); 
 
 /*Ligth and dark theme*/
 

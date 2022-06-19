@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Перед собою ви бачите моє резюме</title>
+    <title>Привіт! Я Єгор і це моє CV</title>
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./libs/aos.css">
     <link rel="stylesheet" href="./css/style.css">
     <!--Link theme-->
     <link rel="stylesheet" title="theme" href="#">
-    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <!--Link Bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous" defer></script>
+    <!--Link Animate-->
+    <script src="./libs/aos.js" defer></script>
     <!--Link JS-->
     <script src="./js/main.js" defer></script>
 </head>
@@ -36,12 +39,24 @@
                             </svg>
                         </a>
                         <ul class="menu" id="menu">
-                            <li><a href="#header" class="menu__link js_scroll">Головна</a></li>
-                            <li><a href="#about" class="menu__link js_scroll">Про мене</a></li>
-                            <li><a href="#skills" class="menu__link js_scroll">Навички</a></li>
-                            <li><a href="#portfolio" class="menu__link js_scroll">Портфоліо</a></li>
-                            <li><a href="#education" class="menu__link js_scroll">Освіта</a></li>
-                            <li><a href="#contacs" class="menu__link js_scroll">Контакти</a></li>
+                            <li>
+                                <a href="#header" class="menu__link js-scroll">Головна</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="menu__link js-scroll">Про мене</a>
+                            </li>
+                            <li>
+                                <a href="#skills" class="menu__link js-scroll">Навички</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" class="menu__link js-scroll">Портфоліо</a>
+                            </li>
+                            <li>
+                                <a href="#education" class="menu__link js-scroll">Освіта</a>
+                            </li>
+                            <li>
+                                <a href="#contacs" class="menu__link js-sroll">Контакти</a>
+                            </li>
                         </ul>
                         <div class="theme">
                             <svg class="change-theme" data-theme="light" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M20 30C22.6522 30 25.1957 28.9464 27.0711 27.0711C28.9464 25.1957 30 22.6522 30 20C30 17.3478 28.9464 14.8043 27.0711 12.9289C25.1957 11.0536 22.6522 10 20 10C17.3478 10 14.8043 11.0536 12.9289 12.9289C11.0536 14.8043 10 17.3478 10 20C10 22.6522 11.0536 25.1957 12.9289 27.0711C14.8043 28.9464 17.3478 30 20 30V30ZM20 0C20.3315 0 20.6495 0.131696 20.8839 0.366117C21.1183 0.600537 21.25 0.918479 21.25 1.25V6.25C21.25 6.58152 21.1183 6.89946 20.8839 7.13388C20.6495 7.3683 20.3315 7.5 20 7.5C19.6685 7.5 19.3505 7.3683 19.1161 7.13388C18.8817 6.89946 18.75 6.58152 18.75 6.25V1.25C18.75 0.918479 18.8817 0.600537 19.1161 0.366117C19.3505 0.131696 19.6685 0 20 0V0ZM20 32.5C20.3315 32.5 20.6495 32.6317 20.8839 32.8661C21.1183 33.1005 21.25 33.4185 21.25 33.75V38.75C21.25 39.0815 21.1183 39.3995 20.8839 39.6339C20.6495 39.8683 20.3315 40 20 40C19.6685 40 19.3505 39.8683 19.1161 39.6339C18.8817 39.3995 18.75 39.0815 18.75 38.75V33.75C18.75 33.4185 18.8817 33.1005 19.1161 32.8661C19.3505 32.6317 19.6685 32.5 20 32.5V32.5ZM40 20C40 20.3315 39.8683 20.6495 39.6339 20.8839C39.3995 21.1183 39.0815 21.25 38.75 21.25H33.75C33.4185 21.25 33.1005 21.1183 32.8661 20.8839C32.6317 20.6495 32.5 20.3315 32.5 20C32.5 19.6685 32.6317 19.3505 32.8661 19.1161C33.1005 18.8817 33.4185 18.75 33.75 18.75H38.75C39.0815 18.75 39.3995 18.8817 39.6339 19.1161C39.8683 19.3505 40 19.6685 40 20ZM7.5 20C7.5 20.3315 7.3683 20.6495 7.13388 20.8839C6.89946 21.1183 6.58152 21.25 6.25 21.25H1.25C0.918479 21.25 0.600537 21.1183 0.366117 20.8839C0.131696 20.6495 0 20.3315 0 20C0 19.6685 0.131696 19.3505 0.366117 19.1161C0.600537 18.8817 0.918479 18.75 1.25 18.75H6.25C6.58152 18.75 6.89946 18.8817 7.13388 19.1161C7.3683 19.3505 7.5 19.6685 7.5 20ZM34.1425 5.8575C34.3768 6.09191 34.5085 6.40979 34.5085 6.74125C34.5085 7.07271 34.3768 7.39059 34.1425 7.625L30.6075 11.1625C30.4913 11.2786 30.3533 11.3706 30.2016 11.4333C30.0498 11.4961 29.8871 11.5283 29.7229 11.5282C29.3912 11.528 29.0731 11.396 28.8387 11.1612C28.7227 11.045 28.6307 10.9071 28.5679 10.7553C28.5052 10.6035 28.4729 10.4409 28.4731 10.2766C28.4733 9.94491 28.6053 9.62689 28.84 9.3925L32.375 5.8575C32.6094 5.62316 32.9273 5.49152 33.2588 5.49152C33.5902 5.49152 33.9081 5.62316 34.1425 5.8575V5.8575ZM11.16 28.84C11.3943 29.0744 11.526 29.3923 11.526 29.7237C11.526 30.0552 11.3943 30.3731 11.16 30.6075L7.625 34.1425C7.38925 34.3702 7.07349 34.4962 6.74575 34.4933C6.418 34.4905 6.10449 34.359 5.87273 34.1273C5.64097 33.8955 5.50951 33.582 5.50666 33.2543C5.50381 32.9265 5.6298 32.6108 5.8575 32.375L9.3925 28.84C9.62691 28.6057 9.94479 28.474 10.2762 28.474C10.6077 28.474 10.9256 28.6057 11.16 28.84V28.84ZM34.1425 34.1425C33.9081 34.3768 33.5902 34.5085 33.2588 34.5085C32.9273 34.5085 32.6094 34.3768 32.375 34.1425L28.84 30.6075C28.6123 30.3717 28.4863 30.056 28.4892 29.7282C28.492 29.4005 28.6235 29.087 28.8552 28.8552C29.087 28.6235 29.4005 28.492 29.7282 28.4892C30.056 28.4863 30.3717 28.6123 30.6075 28.84L34.1425 32.375C34.3768 32.6094 34.5085 32.9273 34.5085 33.2588C34.5085 33.5902 34.3768 33.9081 34.1425 34.1425ZM11.16 11.1625C10.9256 11.3968 10.6077 11.5285 10.2762 11.5285C9.94479 11.5285 9.62691 11.3968 9.3925 11.1625L5.8575 7.625C5.73811 7.50969 5.64288 7.37176 5.57737 7.21926C5.51186 7.06675 5.47738 6.90273 5.47594 6.73675C5.47449 6.57078 5.50612 6.40618 5.56897 6.25256C5.63182 6.09894 5.72464 5.95937 5.84201 5.84201C5.95937 5.72464 6.09894 5.63182 6.25256 5.56897C6.40618 5.50612 6.57078 5.47449 6.73675 5.47594C6.90273 5.47738 7.06675 5.51186 7.21926 5.57737C7.37176 5.64288 7.50969 5.73811 7.625 5.8575L11.16 9.3925C11.2764 9.50861 11.3688 9.64655 11.4318 9.79842C11.4948 9.95028 11.5272 10.1131 11.5272 10.2775C11.5272 10.4419 11.4948 10.6047 11.4318 10.7566C11.3688 10.9084 11.2764 11.0464 11.16 11.1625V11.1625Z"></path></svg>
@@ -59,23 +74,23 @@
     <div class="container col-lg-12">
         <div class="row">
             <div class="wrapper">
-                <h1 class="title">Чорний Єгор</h1>
+                <h1 class="title" data-aos="fade-left" data-aos-delay="50">Чорний Єгор</h1>
                 <div class="wrapper_title">
-                    <h3 class="title_work">Front-end developer 23 роки, Одеса</h3>
+                    <h3 class="title_work" data-aos="fade-right" data-aos-delay="50">Front-end developer 23 роки, Одеса</h3>
                     <div class="lang_title">
                         <a href="index.html" class="lang_title-link">
-                            <h2 class="lang_title-desc">
+                            <h2 class="lang_title-desc active">
                                 EN
                             </h2>
                         </a>
                         <a href="index_ua.html" class="lang_title-link">
-                            <h2 class="lang_title-desc active">
+                            <h2 class="lang_title-desc">
                                 UA
                             </h2>
                         </a>
                     </div>
                 </div>
-                <div class="wrapper_photo"></div>
+                <div class="wrapper_photo" data-aos="fade-down-right" data-aos-delay="50"></div>
             </div>
         </div>
     </div>
@@ -85,10 +100,10 @@
     <div class="container-fluid col-lg-12" id="about">
         <div class="row">
             <div class="about_me">
-                <h1>Про мене</h1>
-                <p>Я початківець у розробці front-end, але швидко вчуся, розумію HTML/CSS, JavaScript/</p>
-                <p>Аналітичний склад розуму, добре розвинене логічне та абстрактне мислення. Розуміння та вміння продуктивно розподіляти свій особистий та робочий час з точним визначенням пріоритетів (time managment).</p>
-                <p>Впевнено справляюся з багатозадачністю та стресовими ситуаціями. Високорозвинені комунікативні навички та ініціативність.</p>
+                <h1 data-aos="zoom-in-right" data-aos-delay="20">Про мене</h1>
+                <p data-aos="zoom-in-right" data-aos-delay="50">Я початківець у розробці front-end, але швидко вчуся, розумію HTML/CSS, JavaScript</p>
+                <p data-aos="zoom-in-right" data-aos-delay="100">Аналітичний склад розуму, добре розвинене логічне та абстрактне мислення. Розуміння та вміння продуктивно розподіляти свій особистий та робочий час з точним визначенням пріоритетів (time managment).</p>
+                <p data-aos="zoom-in-right" data-aos-delay="150">Впевнено справляюся з багатозадачністю та стресовими ситуаціями. Високорозвинені комунікативні навички та ініціативність.</p>
             </div>
         </div>
     </div>
@@ -97,46 +112,46 @@
 <!--Section skills-->
     <div class="container col-lg-12" id="skills">
         <div class="row">
-            <div class="wrapper">
-                <h1 class="skills_title">Навички</h1>
-                <p class="skills_desc">працюю в таких програмах як</p>
+            <div class="wrapper" data-aos="zoom-in-right" data-aos-delay="20">
+                <h1 class="skills_title" data-aos="zoom-in-right" data-aos-delay="20">Skills</h1>
+                <p class="skills_desc" data-aos="zoom-in-right" data-aos-delay="50">I work in such programs as</p>
                     <div class="skills_program">
-                        <figure>
+                        <figure data-aos="zoom-in-down" data-aos-delay="50">
                             <svg class="skill_ico">
                                 <use xlink:href="images/sprite.svg#html"></use>
                             </svg>
                             <figcaption>HTML</figcaption>
                         </figure>
 
-                        <figure>
+                        <figure data-aos="zoom-in-down" data-aos-delay="100">
                             <svg class="skill_ico">
                                 <use xlink:href="images/sprite.svg#css"></use>
                             </svg>
                             <figcaption>CSS</figcaption>
                         </figure>
 
-                        <figure>
+                        <figure data-aos="zoom-in-down" data-aos-delay="150">
                             <svg class="skill_ico">
                                 <use xlink:href="images/sprite.svg#js"></use>
                             </svg>
                             <figcaption>JavaSctipt</figcaption>
                         </figure>
 
-                        <figure>
+                        <figure data-aos="zoom-in-down" data-aos-delay="200">
                             <svg class="skill_ico" id="bootstrap">
                                 <use xlink:href="images/sprite.svg#bootstrap"></use>
                             </svg>
                             <figcaption>Bootstrap</figcaption>
                         </figure>
 
-                        <figure>
+                        <figure data-aos="zoom-in-down" data-aos-delay="250">
                             <svg class="skill_ico" id="figma">
                                 <use xlink:href="images/sprite.svg#figma"></use>
                             </svg>
                             <figcaption>Figma</figcaption>
                         </figure>
 
-                        <figure>
+                        <figure data-aos="zoom-in-down" data-aos-delay="300">
                             <svg class="skill_ico">
                                 <use xlink:href="images/sprite.svg#github"></use>
                             </svg>
@@ -172,24 +187,34 @@
     <div class="container col-lg-12" id="portfolio">
         <div class="row">
             <div class="wrapper">
-                <h1 class="portfolio__title">Портфоліо</h1>
-                <div class="portfolio__cards">
-                    <figure class="portfolio__card portfolio__card-lg">
+                <h1 class="portfolio__title" data-aos="zoom-in-right" data-aos-delay="20">Portfolio</h1>
+                <div class="portfolio__cards" >
+                    <figure class="portfolio__card portfolio__card-lg" data-aos="fade-up">
                         <img src="./images/work_1.jpg" alt="MyWorks" class="portfolio__card-pic">
                         <figcaption class="portfolio__card-title">
-                            GitHub: 
+                            GitHub Link: 
                             <a href="https://projectnum17.github.io/NY_travel/" class="portfolio__card-link" target="_blank">
                                 NY Travel
                             </a>
                         </figcaption>
                     </figure>
 
-                    <figure class="portfolio__card portfolio__card-lg">
+                    <figure class="portfolio__card portfolio__card-sm" data-aos="fade-up">
                         <img src="./images/work_2.jpg" alt="MyWorks" class="portfolio__card-pic">
                         <figcaption class="portfolio__card-title">
-                            GitHub: 
+                            GitHub Link: 
                             <a href="https://projectnum17.github.io/rbn_skateshop/" class="portfolio__card-link" target="_blank">
                                 RBN SkateShop
+                            </a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="portfolio__card portfolio__card-big" data-aos="fade-up">
+                        <img src="./images/work_3.jpg" alt="MyWorks" class="portfolio__card-pic">
+                        <figcaption class="portfolio__card-title">
+                            GitHub Link: 
+                            <a href="https://projectnum17.github.io/motherEarth/" class="portfolio__card-link" target="_blank">
+                                Mother Earth
                             </a>
                         </figcaption>
                     </figure>
@@ -204,11 +229,11 @@
     <div class="container-fluid col-lg-12" id="education">
         <div class="row">
             <div class="education_title" >
-                <h1 >Освіта</h1>
-                <h6>2016 - 2021</h6>
-                <p>Одеський національний економічний університет, отримавши диплом бакалавра за спеціальністю 072 «Фінанси, банківська справа та страхування».</p>
-                <p>У 2021 році отримав степінь магістра на кафедрі фінансового менеджменту. Це дало можливість більш детально вивчити спеціальність.</p>
-                <p>Вмію застосовувати набуті теоретичні знання на практиці, самостійно обробляючи статистичну інформацію та на основі аналізу робити висновки.</p>
+                <h1 data-aos="zoom-in-right" data-aos-delay="20">Освіта</h1>
+                <h6 data-aos="zoom-in-right" data-aos-delay="20">2016 - 2021</h6>
+                <p data-aos="zoom-in-right" data-aos-delay="50">Одеський національний економічний університет, отримавши диплом бакалавра за спеціальністю 072 «Фінанси, банківська справа та страхування».</p>
+                <p data-aos="zoom-in-right" data-aos-delay="100">У 2021 році отримав степінь магістра на кафедрі фінансового менеджменту. Це дало можливість більш детально вивчити спеціальність.</p>
+                <p data-aos="zoom-in-right" data-aos-delay="150">Вмію застосовувати набуті теоретичні знання на практиці, самостійно обробляючи статистичну інформацію та на основі аналізу робити висновки.</p>
             </div>
         </div>
     </div>

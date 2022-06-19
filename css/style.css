@@ -560,6 +560,15 @@ collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
 }
 
 @media screen and (max-width: 1000px) {
+    .logotype {
+        width: 75px;
+        height: 75px;
+    }
+
+    .nav_wrapper {
+        padding: 5px 0 5px 0;
+    }
+
     .nav_wrapper .menu {
         display: none;
     }
